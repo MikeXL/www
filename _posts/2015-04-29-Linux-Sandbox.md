@@ -2,7 +2,7 @@
 layout: post
 title:  "HDP sandbox works too"
 date:   2015-04-29 16:16:01 -0700
-categories: big data
+categories: www
 ---
 
 # Science Log 13.56 0429.15
