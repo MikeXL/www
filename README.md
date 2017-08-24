@@ -1,6 +1,6 @@
 
-Insufficient facts always invite danger !!
-===
+### Insufficient facts always invite danger !!
+
 <ul>
   {% for post in site.posts %}
     <li>
