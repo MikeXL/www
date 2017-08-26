@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Spark, a way we go"
 date:   2015-04-23 16:16:01 -0700
 categories: www

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "You fit a model"
 date:   2016-09-18 09:38:33 -0700
 categories: www

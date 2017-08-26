@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "I have no data"
 date:   2016-01-17 12:38:01 -0700
 categories: www

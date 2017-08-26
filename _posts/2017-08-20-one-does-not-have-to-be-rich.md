@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "One does not have to be rich"
 date:   2017-08-20 11:41:40 -0700
 categories: www

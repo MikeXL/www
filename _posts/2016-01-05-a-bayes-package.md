@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "fun with bayes - an R package"
 date: 2016-01-05 01:02:03 -0700
 ---

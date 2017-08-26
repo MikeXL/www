@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "easy, cloud, up and go"
 date:   2015-04-26 16:16:01 -0700
 categories: www

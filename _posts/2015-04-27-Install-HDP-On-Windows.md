@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Install HDP on Windows"
 date:   2015-04-27 16:16:01 -0700
 categories: www

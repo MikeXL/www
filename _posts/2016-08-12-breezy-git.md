@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "breezy git"
 date: 2014-08-12 12:12:12 -0700
 ---

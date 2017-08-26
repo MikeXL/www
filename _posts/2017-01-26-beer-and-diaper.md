@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Beer and Diaper"
 date:   2017-01-26 11:28:30 -0700
 categories: www

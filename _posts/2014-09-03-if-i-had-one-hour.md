@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "If I had only one hour"
 date:   2014-09-03 09:05:01 -0700
 categories: www
