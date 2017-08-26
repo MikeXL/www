@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "an heard data science story"
 date:   2013-09-23 11:18:08 -0700
 categories: www
