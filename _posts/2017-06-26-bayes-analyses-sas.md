@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "bayes analyses (SAS) class notes, well, call it notes"
+title: "bayes analyses (SAS) class notes"
 date: 2017-06-26 07:26:27 -0700
 ---
 /*Chapter I*/  
