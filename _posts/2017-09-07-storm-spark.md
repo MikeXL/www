@@ -1,7 +1,7 @@
 ---
+title: "storm v. spark streaming"
+date: "2017-09-07 09:44:45 -0700"
 layout: default
-title:  "storm v. spark streaming"
-date:   2017-09-07 09:44:45 -0700
 categories: www
 ---
 
