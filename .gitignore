@@ -34,3 +34,4 @@ vignettes/*.pdf
 _posts/_template.md
 www.Rproj
 *.html
+.Rproj.user
