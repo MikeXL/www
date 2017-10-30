@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "data science - an art of balance"
-date:  2017-09-19 11:51:45  -0700
+date:  2017-10-19 11:51:45  -0700
 categories: www
 ---
 
