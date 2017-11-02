@@ -21,6 +21,76 @@ categories: www
 
 *****************************************************************************************;
 
+proc hpgenselect data=samples (where=(&target ^=.));
+    PARTITION FRACTION(TEST=0.3);
+    class &vars;
+    MODEL &target (EVENT=LAST) = 
+        &vars
+        &vars_int
+        /dist=binomial;
+    SELECTION
+        /*METHOD=lasso*/
+        METHOD=backward
+        DETAILS=ALL;
+run;
+
+proc genmod data=samples (where=(&target ^=.));
+    class &vars;
+    MODEL &target (EVENT=LAST) = 
+            &vars_int
+            &vars
+    /dist=bin;
+run;
+
+
+proc hpneural data=samples(where=(&target ^=.));
+    input &vars_int;
+    input &vars / level=nom;
+    target &target / level=nom;
+    hidden 2;
+    train outmodel=neural maxiter=1000;
+    score out=scores_neural;
+run;
+
+
+proc hpforest data=samples(where=(&target ^=.));
+    input &vars_int;
+    input &vars / level=NOMINAL;
+    target &target / level=NOMINAL;
+run;
+
+proc hpbnet data=samples(where=(&target ^=.))
+    nbin=5
+    structure=Naive TAN PC MB 
+    /*varselect=1*/
+    bestmodel
+;
+    input 
+        &vars_int
+        &vars
+    ;
+    target &target;
+    partition FRACTION (VALIDATE=0.3);
+    output network=bnet fit=fit validinfo=vi varselect=vs varlevel=vl;
+run;
+
+%cat(bnet);
+%cat(fit);
+%cat(vi);
+%cat(vs);
+%cat(vl);
+
+proc hpsplit data=samples (where=(&target ^=.));
+    input &vars
+          &vars_int;
+target &target;
+   grow entropy;
+   prune costcomplexity;
+   code file='~/tmp/hpspexec.sas';
+   rules file='~/tmp/hpsprules.txt';
+run;
+
+
 ```
 
 
