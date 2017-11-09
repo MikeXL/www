@@ -9,7 +9,8 @@ Identifying the most _influential features_ (factors, input or variable) or _var
 
 There has been puzzling me for night and day, a lot research papers on it, and [here][1] is a very good summary of it.
 
-And the easiest way to do it? Not twisting brains to figure out the computer brain. Do feature selection before running the model, or else running decision tree or random forest based on the scored results with nn predicted result as target then identify the most influential features.
+And the easiest way to do it? Not twisting brains to figure out the computer brain. 
+_Do feature selection prior running the model, or else running decision tree or random forest based on the scored results with nn predicted result as target then identify the most influential features._
 
 
 LLAP  
