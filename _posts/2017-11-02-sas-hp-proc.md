@@ -13,7 +13,7 @@ categories: www
     hpgenselect .... regression variable selection, 
                      this proves the mental selection doesnot work
     genmod ......... regression
-    hpneural ....... neural network with 1 hidden layer, 2 neurons
+    hpneural ....... vanilla neural network 
     hpforest ....... random forest
                      varimp proves the same as hpgenselect
     hpbnet ......... bayesian network
@@ -21,7 +21,7 @@ categories: www
 
 *****************************************************************************************;
 
-proc hpgenselect data=samples (where=(&target ^=.));
+proc hpgenselect data=samples ;
     PARTITION FRACTION(TEST=0.3);
     class &vars;
     MODEL &target (EVENT=LAST) = 
@@ -34,7 +34,7 @@ proc hpgenselect data=samples (where=(&target ^=.));
         DETAILS=ALL;
 run;
 
-proc genmod data=samples (where=(&target ^=.));
+proc genmod data=samples ;
     class &vars;
     MODEL &target (EVENT=LAST) = 
             &vars_int
@@ -43,7 +43,7 @@ proc genmod data=samples (where=(&target ^=.));
 run;
 
 
-proc hpneural data=samples(where=(&target ^=.));
+proc hpneural data=samples;
     input &vars_int;
     input &vars / level=nom;
     target &target / level=nom;
@@ -53,13 +53,13 @@ proc hpneural data=samples(where=(&target ^=.));
 run;
 
 
-proc hpforest data=samples(where=(&target ^=.));
+proc hpforest data=samples;
     input &vars_int;
     input &vars / level=NOMINAL;
     target &target / level=NOMINAL;
 run;
 
-proc hpbnet data=samples(where=(&target ^=.))
+proc hpbnet data=samples
     nbin=5
     structure=Naive TAN PC MB 
     /*varselect=1*/
@@ -80,7 +80,7 @@ run;
 %cat(vs);
 %cat(vl);
 
-proc hpsplit data=samples (where=(&target ^=.));
+proc hpsplit data=samples ;
     input &vars
           &vars_int;
 target &target;
