@@ -10,21 +10,22 @@ categories: www
   MJ LOG: 2317.011117
   fit all these models for HSIA surveys with mentally selected variables, likely underfit
 
-    hpgenselect .... regression variable selection, 
+    hpgenselect .... regression variable selection,
                      this proves the mental selection doesnot work
     genmod ......... regression
-    hpneural ....... vanilla neural network 
+    hpneural ....... vanilla neural network
     hpforest ....... random forest
                      varimp proves the same as hpgenselect
     hpbnet ......... bayesian network
     hpsplit ........ tree
+    treeboost ...... gradient boosted tree
 
 *****************************************************************************************;
 
 proc hpgenselect data=samples ;
     PARTITION FRACTION(TEST=0.3);
     class &vars;
-    MODEL &target (EVENT=LAST) = 
+    MODEL &target (EVENT=LAST) =
         &vars
         &vars_int
         /dist=binomial;
@@ -36,7 +37,7 @@ run;
 
 proc genmod data=samples ;
     class &vars;
-    MODEL &target (EVENT=LAST) = 
+    MODEL &target (EVENT=LAST) =
             &vars_int
             &vars
     /dist=bin;
@@ -61,11 +62,11 @@ run;
 
 proc hpbnet data=samples
     nbin=5
-    structure=Naive TAN PC MB 
+    structure=Naive TAN PC MB
     /*varselect=1*/
     bestmodel
 ;
-    input 
+    input
         &vars_int
         &vars
     ;
@@ -92,5 +93,3 @@ run;
 
 
 ```
-
-
