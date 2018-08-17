@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "plot lift chart using R"
+title:  "Plot lift chart using R"
 date:   2018-08-16 19:31:45 -0700
 categories: www
 ---
