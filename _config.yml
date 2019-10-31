@@ -1,4 +1,7 @@
-is_project_page: false
+github:
+  is_project_page: false
+  repository_url: http://mjliu.com
+  
 show_downloads: false
 
 author:
