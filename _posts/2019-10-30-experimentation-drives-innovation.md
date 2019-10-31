@@ -1,5 +1,5 @@
 ---
-Title: "experimentation drives innovation "
+Title: "Experimentation drives innovation "
 Date: 2019-10-30 16:05:08 -0700
 ---
 
