@@ -1,7 +1,8 @@
-------
+---
 Title: "experimentation drives innovation "
-Date: 2019-10-30 16:05:08
-------
+Date: 2019-10-30 16:05:08 -0700
+---
+
 # Experiment 
 ### Two group experiment 
 Typical control and treatment 
