@@ -11,4 +11,4 @@ Date: 2019-10-30 21:18:00 -0700
 
 
 
-1: http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf "paper"
+[1]: http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf 
