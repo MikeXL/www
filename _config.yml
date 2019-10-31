@@ -1,7 +1,12 @@
-github:
-  is_project_page: false
+is_project_page: false
+show_downloads: false
+
+author:
+  name: M.J.
+  url: http://mjliu.com
+  
 theme: jekyll-theme-hacker
 title: M.
-description: Simplicity is the ultimate sophistication.
-show_downloads: false
+tagline: Simplicity is the ultimate sophistication.
+
 google_analytics: UA-50968899-1
