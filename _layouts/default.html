@@ -2,7 +2,10 @@
 layout: default
 title: Blog
 ---
+<ul>
 {% for post in site.posts %}	
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> 
-    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://www.mjliu.com/blog/{{ post.url }}"></a></small></p>			
+<ol>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> | <small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://www.mjliu.com/blog/{{ post.url }}"></a></small>		
+</ol>
 {% endfor %}	
+</ul>
