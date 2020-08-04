@@ -2,7 +2,7 @@ github:
   is_project_page: false 
   is_user_page: false
   public: false 
-  repository_url: http://linkedin.com/in/mjliu 
+  repository_url: http://mjliu.com
   
 show_downloads: false
 
@@ -10,7 +10,7 @@ author:
   name: M.J.
   url: http://mjliu.com
   
-theme: jekyll-theme-tactile 
+theme: jekyll-theme-hacker
 title: M.
 description: Simplicity is the ultimate sophistication.
 
