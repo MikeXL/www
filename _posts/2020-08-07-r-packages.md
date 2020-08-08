@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "R packages, I used the most"
-date:   2020-08-96 21:26:08 -0700
+date:   2020-08-06 21:26:08 -0700
 categories: stats, ml
 ---
 Oh well, thinking to make a list of my fav packages when using R.   
