@@ -16,6 +16,7 @@ Here are the list of packages, I used quite a bit
 * rpart
 * party
 * randomForest
+* e1071
 * MCMCpack
 * DataExplorer
 
