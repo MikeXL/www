@@ -10,13 +10,14 @@ simulations and quick check on A/B test results.
 
 tldr;  
 Here are the list of packages, I used quite a bit
-* DataExplorer
-* rpart
-* party
 * ranger
-* randomForest
 * xgboost
 * DALEX
+* rpart
+* party
+* randomForest
+* MCMCpack
+* DataExplorer
 
 
 More in details... 
